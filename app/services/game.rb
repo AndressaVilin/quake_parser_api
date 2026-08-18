@@ -11,7 +11,7 @@ class Game
   end
 
   def add_player(player_name)
-    return if player_name == '<world>' || @players.include?(player_name)
+    return if player_name == "<world>" || @players.include?(player_name)
 
     @players << player_name
     @kills[player_name] ||= 0
@@ -22,9 +22,9 @@ class Game
 
     add_player(victim)
 
-    if killer == '<world>'
+    if killer == "<world>"
       @kills[victim] -= 1
-    else 
+    else
       add_player(killer)
       @kills[killer] += 1
     end
@@ -39,5 +39,4 @@ class Game
       }
     }
   end
-
 end
