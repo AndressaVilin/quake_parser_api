@@ -7,4 +7,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  namespace :api do
+    namespace :v1 do
+      resources :games, only: [:index, :show]
+      get 'reports/global_ranking', to: 'reports#global_ranking'
+    end
+  end
 end
