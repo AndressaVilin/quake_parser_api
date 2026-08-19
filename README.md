@@ -62,8 +62,8 @@ docker compose up -d --build
 1. Clone o repositório:
 
 ```bash
-git clone <git@github.com:AndressaVilin/quake_parser_api.git>
-cd <quake_parser_api.git>
+git clone git@github.com:AndressaVilin/quake_parser_api.git
+cd quake_parser_api
 ```
 
 2. Instale as dependências:
