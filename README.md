@@ -89,7 +89,7 @@ Para executar os testes unitários e de integração:
 **Via Docker:**
 
 ```bash
-docker compose exec web bundle exec rspec
+docker compose run --rm test bundle exec rspec
 ```
 
 **Localmente:**
