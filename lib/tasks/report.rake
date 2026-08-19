@@ -15,7 +15,7 @@ namespace :report do
       puts "#{game_id.upcase}"
       puts "   • Total de Kills: #{data[:total_kills]}"
       puts "   • Jogadores: #{data[:players].empty? ? 'Nenhum' : data[:players].join(', ')}"
-      
+
       if data[:kills].empty?
         puts "   • Kills: Nenhum registro"
       else
@@ -35,7 +35,7 @@ namespace :report do
     generator.generate_global_ranking.each_with_index do |(player, kills), index|
       puts "#{index + 1}. #{player.ljust(15)} | #{kills} kills"
     end
-    
+
     puts "========================================"
   end
 end

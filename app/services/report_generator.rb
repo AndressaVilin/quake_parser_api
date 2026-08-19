@@ -1,5 +1,4 @@
 class ReportGenerator
-
   def initialize(games)
     @games = games
   end
@@ -25,5 +24,4 @@ class ReportGenerator
 
     ranking.sort_by { |_player, kills| -kills }.to_h
   end
-
 end

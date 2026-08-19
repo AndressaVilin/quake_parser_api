@@ -10,8 +10,8 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :games, only: [:index, :show]
-      get 'reports/global_ranking', to: 'reports#global_ranking'
+      resources :games, only: [ :index, :show ]
+      get "reports/global_ranking", to: "reports#global_ranking"
     end
   end
 end

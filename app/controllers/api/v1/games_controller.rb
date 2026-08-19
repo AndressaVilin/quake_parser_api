@@ -1,5 +1,4 @@
 class Api::V1::GamesController < ApplicationController
-
   before_action :load_reports
 
   def index
@@ -25,5 +24,4 @@ class Api::V1::GamesController < ApplicationController
 
     @games_report = generator.generate_games_report
   end
-
 end
