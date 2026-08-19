@@ -1,7 +1,7 @@
 namespace :report do
   desc "Gera e imprime o relatorio dos jogos e o ranking geral de kills"
   task generate: :environment do
-    log_path = Rails.root.join("spec", "fixtures", "games.log")
+    log_path = Rails.root.join("storage", "games.log")
 
     parser = LogParser.new(log_path)
     games = parser.parse
