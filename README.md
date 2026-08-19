@@ -100,6 +100,31 @@ bundle exec rspec
 
 ---
 
+## ⚡ Rake Tasks (CLI)
+
+Além dos endpoints da API, o projeto disponibiliza uma Rake task para gerar o relatório impresso diretamente no terminal (atendendo aos requisitos de execução via linha de comando).
+
+### Executando o Relatório no Terminal
+
+**Via Docker:**
+
+```bash
+docker compose exec web bundle exec rake report:generate
+```
+
+**Localmente:**
+
+```bash
+bundle exec rake report:generate
+```
+
+Esta task processa o arquivo de log e imprime formatado no terminal:
+
+- Relatório individual detalhado de cada partida (`game_1`, `game_2`, etc.).
+- Ranking global consolidado de pontuação/kills dos jogadores.
+
+---
+
 ## 📌 Endpoints da API
 
 Abaixo estão os endpoints expostos pela aplicação para consulta dos dados processados do log:
