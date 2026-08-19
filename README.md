@@ -37,15 +37,17 @@ Você pode rodar a aplicação de duas maneiras: utilizando **Docker** (recomend
 #### Passos
 
 1. Clone o repositório:
-   ```bash
-   git clone <URL_DO_SEU_REPOSITORIO>
-   cd <NOME_DA_PASTA_DO_PROJETO>
-   ```
+
+```bash
+git clone git@github.com:AndressaVilin/quake_parser_api.git
+cd quake_parser_api
+```
+
 2. Suba o ambiente containerizado:
 
-   ```bash
-   docker compose up --build
-   ```
+```bash
+docker compose up -d --build
+```
 
 3. A API estará pronta e acessível em `http://localhost:3000/api/v1`.
 
@@ -60,8 +62,8 @@ Você pode rodar a aplicação de duas maneiras: utilizando **Docker** (recomend
 1. Clone o repositório:
 
 ```bash
-git clone <URL_DO_SEU_REPOSITORIO>
-cd <NOME_DA_PASTA_DO_PROJETO>
+git clone <git@github.com:AndressaVilin/quake_parser_api.git>
+cd <quake_parser_api.git>
 ```
 
 2. Instale as dependências:
