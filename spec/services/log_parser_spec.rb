@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe LogParser, type: :service do
-  let(:log_file_path) { Rails.root.join('spec', 'fixtures', 'games.log') }
+  let(:log_file_path) { Rails.root.join('storage', 'games.log') }
   subject(:parser) { described_class.new(log_file_path) }
 
   describe '#parse' do

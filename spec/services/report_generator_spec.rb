@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe ReportGenerator, type: :service do
-  let(:log_file_path) { Rails.root.join('spec', 'fixtures', 'games.log') }
+  let(:log_file_path) { Rails.root.join('storage', 'games.log') }
   let(:games) { LogParser.new(log_file_path).parse }
   subject(:generator) { described_class.new(games) }
 

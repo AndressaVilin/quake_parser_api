@@ -1,7 +1,7 @@
 class LogParser
   KILL_REGEX = /Kill: \d+ \d+ \d+: (.+) killed (.+) by (.+)/
 
-  def initialize(file_path = Rails.root.join("spec", "fixtures", "games.log"))
+  def initialize(file_path = Rails.root.join("storage", "games.log"))
     @file_path = file_path
     @games = []
   end
