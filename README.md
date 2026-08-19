@@ -47,7 +47,7 @@ Você pode rodar a aplicação de duas maneiras: utilizando **Docker** (recomend
    docker compose up --build
    ```
 
-3. A API estará pronta e acessível em http://localhost:3000.
+3. A API estará pronta e acessível em `http://localhost:3000/api/v1`.
 
 ### Opção 2: Execução Local (Sem Docker)
 
@@ -168,8 +168,10 @@ Abaixo estão os endpoints expostos pela aplicação para consulta dos dados pro
 │   │           ├── games_spec.rb
 │   │           └── reports_spec.rb
 │   ├── services/
-│       ├── log_parser_spec.rb
-│       └── report_generator_spec.rb
+│   │   ├── log_parser_spec.rb
+│   │   └── report_generator_spec.rb
+│   ├── rails_helper.rb
+│   └── spec_helper.rb
 │
 ├── storage/                   # Onde o arquivo games.log fica armazenado
 │   └── games.log
@@ -182,3 +184,5 @@ Abaixo estão os endpoints expostos pela aplicação para consulta dos dados pro
 ## 🧑‍💻 Autora
 
 Desenvolvido por **Andressa** como parte do desafio técnico para a vaga de Desenvolvedor Júnior Ruby on Rails.
+
+[LinkedIn](https://www.linkedin.com/in/andressa-evilin-986427359/) • [GitHub](https://github.com/AndressaVilin)
