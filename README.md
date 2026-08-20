@@ -141,7 +141,7 @@ Abaixo estão os endpoints expostos pela aplicação para consulta dos dados pro
 
 ## 📄 Exemplos de Retorno da API
 
-### 1. Detalhes de um Jogo (`GET /api/v1/games/1`)
+### 1. Detalhes de um Jogo (`GET /api/v1/games/game_1`)
 
 ```json
 {
@@ -161,7 +161,7 @@ Abaixo estão os endpoints expostos pela aplicação para consulta dos dados pro
 
 ```json
 {
-  "ranking": {
+  "ranking_global": {
     "Zeh": 120,
     "Isgalamido": 95,
     "Dono da bola": 42
